@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		750E19E71C39E41400A0D37E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750E19E61C39E41400A0D37E /* CoreLocation.framework */; };
+		7539A5541C2B3B2E0082D4AE /* iTunesSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7539A5531C2B3B2E0082D4AE /* iTunesSignalViewController.m */; };
+		7595FD511C39827700599A0E /* ClockAPIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7595FD501C39827700599A0E /* ClockAPIHandler.m */; };
+		7596D3BD1C398ACC0039B439 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7596D3BC1C398ACC0039B439 /* AlarmDetailViewController.m */; };
+		75A6E2EC1C15D51B008E7D10 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2C71C15D51B008E7D10 /* AFHTTPRequestOperation.m */; };
+		75A6E2ED1C15D51B008E7D10 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2C91C15D51B008E7D10 /* AFHTTPRequestOperationManager.m */; };
+		75A6E2EE1C15D51B008E7D10 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2CB1C15D51B008E7D10 /* AFHTTPSessionManager.m */; };
+		75A6E2EF1C15D51B008E7D10 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2CE1C15D51B008E7D10 /* AFNetworkReachabilityManager.m */; };
+		75A6E2F01C15D51B008E7D10 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2D01C15D51B008E7D10 /* AFSecurityPolicy.m */; };
+		75A6E2F11C15D51B008E7D10 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2D21C15D51B008E7D10 /* AFURLConnectionOperation.m */; };
+		75A6E2F21C15D51B008E7D10 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2D41C15D51B008E7D10 /* AFURLRequestSerialization.m */; };
+		75A6E2F31C15D51B008E7D10 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2D61C15D51B008E7D10 /* AFURLResponseSerialization.m */; };
+		75A6E2F41C15D51B008E7D10 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2D81C15D51B008E7D10 /* AFURLSessionManager.m */; };
+		75A6E2F51C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2DB1C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.m */; };
+		75A6E2F61C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2DD1C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.m */; };
+		75A6E2F71C15D51B008E7D10 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2DF1C15D51B008E7D10 /* UIAlertView+AFNetworking.m */; };
+		75A6E2F81C15D51B008E7D10 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2E11C15D51B008E7D10 /* UIButton+AFNetworking.m */; };
+		75A6E2F91C15D51B008E7D10 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2E41C15D51B008E7D10 /* UIImageView+AFNetworking.m */; };
+		75A6E2FA1C15D51B008E7D10 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2E71C15D51B008E7D10 /* UIProgressView+AFNetworking.m */; };
+		75A6E2FB1C15D51B008E7D10 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2E91C15D51B008E7D10 /* UIRefreshControl+AFNetworking.m */; };
+		75A6E2FC1C15D51B008E7D10 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2EB1C15D51B008E7D10 /* UIWebView+AFNetworking.m */; };
+		75A6E2FF1C15E042008E7D10 /* SPTSessionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6E2FE1C15E042008E7D10 /* SPTSessionHandler.m */; };
+		75D990F51C2B1E1600A319A3 /* SpotifyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D990F41C2B1E1600A319A3 /* SpotifyObject.m */; };
+		75E51E761C2D8A4000D24E00 /* EventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E51E751C2D8A4000D24E00 /* EventFetcher.m */; };
+		75EBA6031BFE515C00DF907A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA6021BFE515C00DF907A /* main.m */; };
+		75EBA6061BFE515C00DF907A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA6051BFE515C00DF907A /* AppDelegate.m */; };
+		75EBA60C1BFE515C00DF907A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EBA60A1BFE515C00DF907A /* Main.storyboard */; };
+		75EBA60E1BFE515C00DF907A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EBA60D1BFE515C00DF907A /* Images.xcassets */; };
+		75EBA6111BFE515C00DF907A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EBA60F1BFE515C00DF907A /* LaunchScreen.xib */; };
+		75EBA61D1BFE515C00DF907A /* iOSAlarmClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA61C1BFE515C00DF907A /* iOSAlarmClockTests.m */; };
+		75EBA62A1BFE60E400DF907A /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA6291BFE60E400DF907A /* ClockViewController.m */; };
+		75EBA62D1BFF5AB500DF907A /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBA62C1BFF5AB500DF907A /* AlarmViewController.m */; };
+		75EBA6361C0DFCBB00DF907A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBA6351C0DFCBB00DF907A /* Spotify.framework */; };
+		75EBA6381C0DFD9900DF907A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBA6371C0DFD9900DF907A /* AVFoundation.framework */; };
+		75EBA63A1C0DFDA400DF907A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBA6391C0DFDA400DF907A /* SystemConfiguration.framework */; };
+		75FAD5BA1C1706D500D5774D /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAD5B91C1706D500D5774D /* Alarm.m */; };
+		75FAD5BE1C170DAA00D5774D /* AlarmHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAD5BD1C170DAA00D5774D /* AlarmHandler.m */; };
+		75FAD5C11C186E7700D5774D /* SpotifySignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAD5C01C186E7700D5774D /* SpotifySignalViewController.m */; };
+		75FAD5C41C1B0B7400D5774D /* APIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAD5C31C1B0B7400D5774D /* APIHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75EBA6171BFE515C00DF907A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBA5F51BFE515C00DF907A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75EBA5FC1BFE515C00DF907A;
+			remoteInfo = iOSAlarmClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		750E19E61C39E41400A0D37E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		751E83B11C2885D200785834 /* SpotifyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyObject.h; sourceTree = "<group>"; };
+		7539A5521C2B3B2E0082D4AE /* iTunesSignalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesSignalViewController.h; sourceTree = "<group>"; };
+		7539A5531C2B3B2E0082D4AE /* iTunesSignalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesSignalViewController.m; sourceTree = "<group>"; };
+		7595FD4F1C39827700599A0E /* ClockAPIHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockAPIHandler.h; sourceTree = "<group>"; };
+		7595FD501C39827700599A0E /* ClockAPIHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockAPIHandler.m; sourceTree = "<group>"; };
+		7596D3BB1C398ACC0039B439 /* AlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmDetailViewController.h; sourceTree = "<group>"; };
+		7596D3BC1C398ACC0039B439 /* AlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmDetailViewController.m; sourceTree = "<group>"; };
+		75A6E2C61C15D51B008E7D10 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		75A6E2C71C15D51B008E7D10 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		75A6E2C81C15D51B008E7D10 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		75A6E2C91C15D51B008E7D10 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		75A6E2CA1C15D51B008E7D10 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		75A6E2CB1C15D51B008E7D10 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		75A6E2CC1C15D51B008E7D10 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		75A6E2CD1C15D51B008E7D10 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		75A6E2CE1C15D51B008E7D10 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		75A6E2CF1C15D51B008E7D10 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		75A6E2D01C15D51B008E7D10 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		75A6E2D11C15D51B008E7D10 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		75A6E2D21C15D51B008E7D10 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		75A6E2D31C15D51B008E7D10 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		75A6E2D41C15D51B008E7D10 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		75A6E2D51C15D51B008E7D10 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		75A6E2D61C15D51B008E7D10 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		75A6E2D71C15D51B008E7D10 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		75A6E2D81C15D51B008E7D10 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		75A6E2DA1C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		75A6E2DB1C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		75A6E2DC1C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2DD1C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2DE1C15D51B008E7D10 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2DF1C15D51B008E7D10 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2E01C15D51B008E7D10 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E11C15D51B008E7D10 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2E21C15D51B008E7D10 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E31C15D51B008E7D10 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E41C15D51B008E7D10 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2E51C15D51B008E7D10 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E61C15D51B008E7D10 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E71C15D51B008E7D10 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2E81C15D51B008E7D10 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2E91C15D51B008E7D10 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2EA1C15D51B008E7D10 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		75A6E2EB1C15D51B008E7D10 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		75A6E2FD1C15E042008E7D10 /* SPTSessionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTSessionHandler.h; sourceTree = "<group>"; };
+		75A6E2FE1C15E042008E7D10 /* SPTSessionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTSessionHandler.m; sourceTree = "<group>"; };
+		75D990F41C2B1E1600A319A3 /* SpotifyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyObject.m; sourceTree = "<group>"; };
+		75E51E741C2D8A4000D24E00 /* EventFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventFetcher.h; sourceTree = "<group>"; };
+		75E51E751C2D8A4000D24E00 /* EventFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventFetcher.m; sourceTree = "<group>"; };
+		75EBA5FD1BFE515C00DF907A /* iOSAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EBA6011BFE515C00DF907A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EBA6021BFE515C00DF907A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75EBA6041BFE515C00DF907A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75EBA6051BFE515C00DF907A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75EBA60B1BFE515C00DF907A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75EBA60D1BFE515C00DF907A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75EBA6101BFE515C00DF907A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		75EBA6161BFE515C00DF907A /* iOSAlarmClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAlarmClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EBA61B1BFE515C00DF907A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EBA61C1BFE515C00DF907A /* iOSAlarmClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAlarmClockTests.m; sourceTree = "<group>"; };
+		75EBA6281BFE60E400DF907A /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		75EBA6291BFE60E400DF907A /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		75EBA62B1BFF5AB500DF907A /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		75EBA62C1BFF5AB500DF907A /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		75EBA6351C0DFCBB00DF907A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		75EBA6371C0DFD9900DF907A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		75EBA6391C0DFDA400DF907A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		75FAD5B81C1706D500D5774D /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		75FAD5B91C1706D500D5774D /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		75FAD5BC1C170DAA00D5774D /* AlarmHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmHandler.h; sourceTree = "<group>"; };
+		75FAD5BD1C170DAA00D5774D /* AlarmHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmHandler.m; sourceTree = "<group>"; };
+		75FAD5BF1C186E7700D5774D /* SpotifySignalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifySignalViewController.h; sourceTree = "<group>"; };
+		75FAD5C01C186E7700D5774D /* SpotifySignalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifySignalViewController.m; sourceTree = "<group>"; };
+		75FAD5C21C1B0B7400D5774D /* APIHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHandler.h; sourceTree = "<group>"; };
+		75FAD5C31C1B0B7400D5774D /* APIHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75EBA5FA1BFE515C00DF907A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750E19E71C39E41400A0D37E /* CoreLocation.framework in Frameworks */,
+				75EBA63A1C0DFDA400DF907A /* SystemConfiguration.framework in Frameworks */,
+				75EBA6381C0DFD9900DF907A /* AVFoundation.framework in Frameworks */,
+				75EBA6361C0DFCBB00DF907A /* Spotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EBA6131BFE515C00DF907A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75A6E2C51C15D51B008E7D10 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				75A6E2C61C15D51B008E7D10 /* AFHTTPRequestOperation.h */,
+				75A6E2C71C15D51B008E7D10 /* AFHTTPRequestOperation.m */,
+				75A6E2C81C15D51B008E7D10 /* AFHTTPRequestOperationManager.h */,
+				75A6E2C91C15D51B008E7D10 /* AFHTTPRequestOperationManager.m */,
+				75A6E2CA1C15D51B008E7D10 /* AFHTTPSessionManager.h */,
+				75A6E2CB1C15D51B008E7D10 /* AFHTTPSessionManager.m */,
+				75A6E2CC1C15D51B008E7D10 /* AFNetworking.h */,
+				75A6E2CD1C15D51B008E7D10 /* AFNetworkReachabilityManager.h */,
+				75A6E2CE1C15D51B008E7D10 /* AFNetworkReachabilityManager.m */,
+				75A6E2CF1C15D51B008E7D10 /* AFSecurityPolicy.h */,
+				75A6E2D01C15D51B008E7D10 /* AFSecurityPolicy.m */,
+				75A6E2D11C15D51B008E7D10 /* AFURLConnectionOperation.h */,
+				75A6E2D21C15D51B008E7D10 /* AFURLConnectionOperation.m */,
+				75A6E2D31C15D51B008E7D10 /* AFURLRequestSerialization.h */,
+				75A6E2D41C15D51B008E7D10 /* AFURLRequestSerialization.m */,
+				75A6E2D51C15D51B008E7D10 /* AFURLResponseSerialization.h */,
+				75A6E2D61C15D51B008E7D10 /* AFURLResponseSerialization.m */,
+				75A6E2D71C15D51B008E7D10 /* AFURLSessionManager.h */,
+				75A6E2D81C15D51B008E7D10 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		75A6E2D91C15D51B008E7D10 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				75A6E2DA1C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.h */,
+				75A6E2DB1C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.m */,
+				75A6E2DC1C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.h */,
+				75A6E2DD1C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.m */,
+				75A6E2DE1C15D51B008E7D10 /* UIAlertView+AFNetworking.h */,
+				75A6E2DF1C15D51B008E7D10 /* UIAlertView+AFNetworking.m */,
+				75A6E2E01C15D51B008E7D10 /* UIButton+AFNetworking.h */,
+				75A6E2E11C15D51B008E7D10 /* UIButton+AFNetworking.m */,
+				75A6E2E21C15D51B008E7D10 /* UIImage+AFNetworking.h */,
+				75A6E2E31C15D51B008E7D10 /* UIImageView+AFNetworking.h */,
+				75A6E2E41C15D51B008E7D10 /* UIImageView+AFNetworking.m */,
+				75A6E2E51C15D51B008E7D10 /* UIKit+AFNetworking.h */,
+				75A6E2E61C15D51B008E7D10 /* UIProgressView+AFNetworking.h */,
+				75A6E2E71C15D51B008E7D10 /* UIProgressView+AFNetworking.m */,
+				75A6E2E81C15D51B008E7D10 /* UIRefreshControl+AFNetworking.h */,
+				75A6E2E91C15D51B008E7D10 /* UIRefreshControl+AFNetworking.m */,
+				75A6E2EA1C15D51B008E7D10 /* UIWebView+AFNetworking.h */,
+				75A6E2EB1C15D51B008E7D10 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		75E51E731C2D89A200D24E00 /* OtherAppsModel */ = {
+			isa = PBXGroup;
+			children = (
+				75E51E741C2D8A4000D24E00 /* EventFetcher.h */,
+				75E51E751C2D8A4000D24E00 /* EventFetcher.m */,
+				7595FD4F1C39827700599A0E /* ClockAPIHandler.h */,
+				7595FD501C39827700599A0E /* ClockAPIHandler.m */,
+			);
+			name = OtherAppsModel;
+			sourceTree = "<group>";
+		};
+		75EBA5F41BFE515C00DF907A = {
+			isa = PBXGroup;
+			children = (
+				75FAD5BB1C1706E300D5774D /* AlarmModel */,
+				75EBA6331C0DFBFC00DF907A /* SpotifyModel */,
+				75E51E731C2D89A200D24E00 /* OtherAppsModel */,
+				75EBA5FF1BFE515C00DF907A /* iOSAlarmClock */,
+				75EBA6341C0DFC7F00DF907A /* Frameworks */,
+				75EBA6191BFE515C00DF907A /* iOSAlarmClockTests */,
+				75EBA5FE1BFE515C00DF907A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75EBA5FE1BFE515C00DF907A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA5FD1BFE515C00DF907A /* iOSAlarmClock.app */,
+				75EBA6161BFE515C00DF907A /* iOSAlarmClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBA5FF1BFE515C00DF907A /* iOSAlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA6041BFE515C00DF907A /* AppDelegate.h */,
+				75EBA6051BFE515C00DF907A /* AppDelegate.m */,
+				75EBA6281BFE60E400DF907A /* ClockViewController.h */,
+				75EBA6291BFE60E400DF907A /* ClockViewController.m */,
+				7596D3BB1C398ACC0039B439 /* AlarmDetailViewController.h */,
+				7596D3BC1C398ACC0039B439 /* AlarmDetailViewController.m */,
+				75EBA62B1BFF5AB500DF907A /* AlarmViewController.h */,
+				75EBA62C1BFF5AB500DF907A /* AlarmViewController.m */,
+				75FAD5BF1C186E7700D5774D /* SpotifySignalViewController.h */,
+				75FAD5C01C186E7700D5774D /* SpotifySignalViewController.m */,
+				7539A5521C2B3B2E0082D4AE /* iTunesSignalViewController.h */,
+				7539A5531C2B3B2E0082D4AE /* iTunesSignalViewController.m */,
+				75EBA60A1BFE515C00DF907A /* Main.storyboard */,
+				75EBA60D1BFE515C00DF907A /* Images.xcassets */,
+				75EBA60F1BFE515C00DF907A /* LaunchScreen.xib */,
+				75EBA6001BFE515C00DF907A /* Supporting Files */,
+			);
+			path = iOSAlarmClock;
+			sourceTree = "<group>";
+		};
+		75EBA6001BFE515C00DF907A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA6011BFE515C00DF907A /* Info.plist */,
+				75EBA6021BFE515C00DF907A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EBA6191BFE515C00DF907A /* iOSAlarmClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA61C1BFE515C00DF907A /* iOSAlarmClockTests.m */,
+				75EBA61A1BFE515C00DF907A /* Supporting Files */,
+			);
+			path = iOSAlarmClockTests;
+			sourceTree = "<group>";
+		};
+		75EBA61A1BFE515C00DF907A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EBA61B1BFE515C00DF907A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EBA6331C0DFBFC00DF907A /* SpotifyModel */ = {
+			isa = PBXGroup;
+			children = (
+				751E83B11C2885D200785834 /* SpotifyObject.h */,
+				75D990F41C2B1E1600A319A3 /* SpotifyObject.m */,
+				75FAD5C21C1B0B7400D5774D /* APIHandler.h */,
+				75FAD5C31C1B0B7400D5774D /* APIHandler.m */,
+				75A6E2FD1C15E042008E7D10 /* SPTSessionHandler.h */,
+				75A6E2FE1C15E042008E7D10 /* SPTSessionHandler.m */,
+			);
+			name = SpotifyModel;
+			sourceTree = "<group>";
+		};
+		75EBA6341C0DFC7F00DF907A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				750E19E61C39E41400A0D37E /* CoreLocation.framework */,
+				75A6E2C51C15D51B008E7D10 /* AFNetworking */,
+				75A6E2D91C15D51B008E7D10 /* UIKit+AFNetworking */,
+				75EBA6391C0DFDA400DF907A /* SystemConfiguration.framework */,
+				75EBA6371C0DFD9900DF907A /* AVFoundation.framework */,
+				75EBA6351C0DFCBB00DF907A /* Spotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75FAD5BB1C1706E300D5774D /* AlarmModel */ = {
+			isa = PBXGroup;
+			children = (
+				75FAD5B81C1706D500D5774D /* Alarm.h */,
+				75FAD5B91C1706D500D5774D /* Alarm.m */,
+				75FAD5BC1C170DAA00D5774D /* AlarmHandler.h */,
+				75FAD5BD1C170DAA00D5774D /* AlarmHandler.m */,
+			);
+			name = AlarmModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75EBA5FC1BFE515C00DF907A /* iOSAlarmClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EBA6201BFE515C00DF907A /* Build configuration list for PBXNativeTarget "iOSAlarmClock" */;
+			buildPhases = (
+				75EBA5F91BFE515C00DF907A /* Sources */,
+				75EBA5FA1BFE515C00DF907A /* Frameworks */,
+				75EBA5FB1BFE515C00DF907A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSAlarmClock;
+			productName = iOSAlarmClock;
+			productReference = 75EBA5FD1BFE515C00DF907A /* iOSAlarmClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75EBA6151BFE515C00DF907A /* iOSAlarmClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EBA6231BFE515C00DF907A /* Build configuration list for PBXNativeTarget "iOSAlarmClockTests" */;
+			buildPhases = (
+				75EBA6121BFE515C00DF907A /* Sources */,
+				75EBA6131BFE515C00DF907A /* Frameworks */,
+				75EBA6141BFE515C00DF907A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75EBA6181BFE515C00DF907A /* PBXTargetDependency */,
+			);
+			name = iOSAlarmClockTests;
+			productName = iOSAlarmClockTests;
+			productReference = 75EBA6161BFE515C00DF907A /* iOSAlarmClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75EBA5F51BFE515C00DF907A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Oskar Franzén";
+				TargetAttributes = {
+					75EBA5FC1BFE515C00DF907A = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					75EBA6151BFE515C00DF907A = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 75EBA5FC1BFE515C00DF907A;
+					};
+				};
+			};
+			buildConfigurationList = 75EBA5F81BFE515C00DF907A /* Build configuration list for PBXProject "iOSAlarmClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75EBA5F41BFE515C00DF907A;
+			productRefGroup = 75EBA5FE1BFE515C00DF907A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75EBA5FC1BFE515C00DF907A /* iOSAlarmClock */,
+				75EBA6151BFE515C00DF907A /* iOSAlarmClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75EBA5FB1BFE515C00DF907A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EBA60C1BFE515C00DF907A /* Main.storyboard in Resources */,
+				75EBA6111BFE515C00DF907A /* LaunchScreen.xib in Resources */,
+				75EBA60E1BFE515C00DF907A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EBA6141BFE515C00DF907A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75EBA5F91BFE515C00DF907A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596D3BD1C398ACC0039B439 /* AlarmDetailViewController.m in Sources */,
+				75A6E2F41C15D51B008E7D10 /* AFURLSessionManager.m in Sources */,
+				75EBA62A1BFE60E400DF907A /* ClockViewController.m in Sources */,
+				75EBA62D1BFF5AB500DF907A /* AlarmViewController.m in Sources */,
+				75A6E2EF1C15D51B008E7D10 /* AFNetworkReachabilityManager.m in Sources */,
+				75A6E2F51C15D51B008E7D10 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				75A6E2F11C15D51B008E7D10 /* AFURLConnectionOperation.m in Sources */,
+				75A6E2FF1C15E042008E7D10 /* SPTSessionHandler.m in Sources */,
+				75FAD5C11C186E7700D5774D /* SpotifySignalViewController.m in Sources */,
+				7539A5541C2B3B2E0082D4AE /* iTunesSignalViewController.m in Sources */,
+				75E51E761C2D8A4000D24E00 /* EventFetcher.m in Sources */,
+				75A6E2FA1C15D51B008E7D10 /* UIProgressView+AFNetworking.m in Sources */,
+				75A6E2EE1C15D51B008E7D10 /* AFHTTPSessionManager.m in Sources */,
+				75A6E2F21C15D51B008E7D10 /* AFURLRequestSerialization.m in Sources */,
+				75EBA6061BFE515C00DF907A /* AppDelegate.m in Sources */,
+				75D990F51C2B1E1600A319A3 /* SpotifyObject.m in Sources */,
+				75A6E2F81C15D51B008E7D10 /* UIButton+AFNetworking.m in Sources */,
+				7595FD511C39827700599A0E /* ClockAPIHandler.m in Sources */,
+				75FAD5C41C1B0B7400D5774D /* APIHandler.m in Sources */,
+				75A6E2F91C15D51B008E7D10 /* UIImageView+AFNetworking.m in Sources */,
+				75EBA6031BFE515C00DF907A /* main.m in Sources */,
+				75A6E2F71C15D51B008E7D10 /* UIAlertView+AFNetworking.m in Sources */,
+				75A6E2FC1C15D51B008E7D10 /* UIWebView+AFNetworking.m in Sources */,
+				75FAD5BA1C1706D500D5774D /* Alarm.m in Sources */,
+				75A6E2F61C15D51B008E7D10 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				75FAD5BE1C170DAA00D5774D /* AlarmHandler.m in Sources */,
+				75A6E2ED1C15D51B008E7D10 /* AFHTTPRequestOperationManager.m in Sources */,
+				75A6E2FB1C15D51B008E7D10 /* UIRefreshControl+AFNetworking.m in Sources */,
+				75A6E2F01C15D51B008E7D10 /* AFSecurityPolicy.m in Sources */,
+				75A6E2F31C15D51B008E7D10 /* AFURLResponseSerialization.m in Sources */,
+				75A6E2EC1C15D51B008E7D10 /* AFHTTPRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EBA6121BFE515C00DF907A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EBA61D1BFE515C00DF907A /* iOSAlarmClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75EBA6181BFE515C00DF907A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75EBA5FC1BFE515C00DF907A /* iOSAlarmClock */;
+			targetProxy = 75EBA6171BFE515C00DF907A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75EBA60A1BFE515C00DF907A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EBA60B1BFE515C00DF907A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75EBA60F1BFE515C00DF907A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EBA6101BFE515C00DF907A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75EBA61E1BFE515C00DF907A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75EBA61F1BFE515C00DF907A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75EBA6211BFE515C00DF907A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOSAlarmClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75EBA6221BFE515C00DF907A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOSAlarmClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75EBA6241BFE515C00DF907A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSAlarmClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAlarmClock.app/iOSAlarmClock";
+			};
+			name = Debug;
+		};
+		75EBA6251BFE515C00DF907A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSAlarmClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAlarmClock.app/iOSAlarmClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75EBA5F81BFE515C00DF907A /* Build configuration list for PBXProject "iOSAlarmClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EBA61E1BFE515C00DF907A /* Debug */,
+				75EBA61F1BFE515C00DF907A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EBA6201BFE515C00DF907A /* Build configuration list for PBXNativeTarget "iOSAlarmClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EBA6211BFE515C00DF907A /* Debug */,
+				75EBA6221BFE515C00DF907A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EBA6231BFE515C00DF907A /* Build configuration list for PBXNativeTarget "iOSAlarmClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EBA6241BFE515C00DF907A /* Debug */,
+				75EBA6251BFE515C00DF907A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75EBA5F51BFE515C00DF907A /* Project object */;
+}

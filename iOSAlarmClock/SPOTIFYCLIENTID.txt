@@ -1,0 +1,2 @@
+[[SPTAuth defaultInstance] setClientID:@"90d6e9db663647ad8aa2987a136179df"];
+[[SPTAuth defaultInstance] setRedirectURL:[NSURL URLWithString:@"spotifyalarmclock://callback"]];
